@@ -3,27 +3,31 @@
 
 @section('meta')
     <title>Sitemap | Boiler Installation UK</title>
-    <meta name="description" content="Explore our boiler installation, repair, and plumbing services. Your trusted partner for heating solutions in the UK.">
-
-    <meta name="keywords" content="boiler installation, boiler repair, plumbing services, radiator installation, pipe leak repair, heating solutions, UK">
-    <meta name="author" content="Boiler Installation UK">
+    <meta name="description"
+        content="Explore the sitemap of MINT Commercial Ltd website to navigate through our services, pages, and content efficiently.">
+    <meta name="keywords" content="sitemap, MINT Commercial Ltd, website navigation, services, pages, content">
+    <meta name="author" content="MINT Commercial Ltd">
 @endsection
 
 
 
 @section('content')
     <div class="container">
-        <div class="row mt-60" style="margin-top:100px;">
-            <h4>Boiler Installation UK Sitemap</h4>
+        <div class="row mt-60">
+            <h4>MINT Commercial Sitemap</h4>
             <p>
-                Welcome to Boiler Installation UK's sitemap! Discover our premium boiler installation, repair, plumbing,
-                radiator installation, and pipe leak repair services. Navigate easily to find the heating solutions you need.
+                Discover top-notch commercial cleaning services for your business! We offer Window Cleaning, Gutter
+                Cleaning, Commercial Guttering, and Pressure Washing solutions. Find what you need on our sitemap page and
+                make your space shine!
+                Navigating our sitemap is a breeze, designed to streamline your search for specific content on our website.
+                We've organized it carefully to provide a user-friendly experience, ensuring you can easily find what you're
+                looking for.
             </p>
             <p>
-                Our sitemap is designed for effortless exploration, ensuring you can swiftly locate specific content on our
-                website. Thank you for choosing Boiler Installation UK as your trusted heating solutions provider.
-                If you have any questions or require assistance, our dedicated team is here to assist you.
-            </p>            
+                Thank you for choosing MINT Commercial Ltd as your trusted partner for commercial cleaning needs. If you
+                have any questions or need further assistance, our friendly team is here to help. Let us help you create a
+                spotless and welcoming environment that leaves a lasting impression on your clients and employees alike.
+            </p>
         </div>
 
         <div class="row mx-auto">

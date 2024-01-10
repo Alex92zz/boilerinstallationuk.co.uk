@@ -2,365 +2,313 @@
 
 
 @section('meta')
-    <title>JB Block Paving Kidderminster | Tarmac Surfacing | Tree Removal</title>
-    <meta name="description"
-        content="Connect with JB Blockpaving & Landscapers Ltd on our Contact page, where excellence meets accessibility. As trusted specialists in block paving and tarmac installation, our passionate team is ready to discuss and transform your outdoor spaces with precision and creativity. Explore top-quality solutions for durable and aesthetically pleasing driveways and pathways. Reach out to us and bring your vision to life!.">
-    <meta name="author" content="JB Block Paving & Landscapers">
+<title>Boiler Installation UK</title>
+<meta name="description" content="Experience excellence in boiler installation, repair, and plumbing services. Trust us for heating solutions in the UK.">
+<meta name="keywords" content="boiler installation, boiler repair, plumbing services, radiator installation, pipe leak repair, heating solutions, UK">
+<meta name="author" content="Boiler Installation UK">
 @endsection
 
 @section('content')
-    <!--Form Back Drop-->
-    <div class="form-back-drop"></div>
+    @include('components.mainslider')
+    @include('components.finance-available')
+
+    @include('components.home-page-boilers', ['boilers' => $boilers])
 
 
-    <!-------------------------------------------------- Banner Section -------------------------------------------------->
-    <!-- Banner Section -->
-    <section class="banner-section banner-one">
+    <section class="ls ms overflow_hidden half_section section_padding_top_50 section_padding_bottom_50 columns_padding_80">
 
-        <div class="banner-carousel owl-theme owl-carousel">
-            <!-- Slide Item -->
-            <div class="slide-item">
-                <div id="image-layer-1" class="image-layer image-size image-layer-1-before" style="opacity: 0.4; ">
-                </div>
-                <div class="auto-container">
-                    <div class="content-box">
-                        <div class="content clearfix">
-                            <div class="inner">
-                                <div class="subtitle">Welcome to <br /> JB BLOCKPAVING &amp; LANDSCAPERS LTD</div>
-                                <h1>Expert Block Paving Services</h1>
-                                <div class="text">
-                                    We are a specialist paving and driveways company. Specializing in driveways, walkways,
-                                    and patios, we blend precision design with durable materials for stunning results. Our
-                                    process includes free, no-obligation quotes, quick turnarounds, and an unyielding
-                                    commitment to 100% satisfaction. Transform your surroundings with our meticulous
-                                    approach to block paving.
+        <div class="container-fluid">
+            <div class="row">
 
-                                </div>
-                                <div class="link-box clearfix">
-                                    <a href="{{ route('block-paving') }}" class="theme-btn btn-style-one"><span class="btn-title">Block Paving Services <i class="arrow flaticon-play-button-1"></i></span></a>
-                                    <a href="#contact" class="theme-btn btn-style-two"><span class="btn-title">Contact Us <i
-                                                class="arrow flaticon-play-button-1"></i></span></a>
-                                </div>
+                <div class="col-md-6 to_animate" data-animation="fadeInRight">
+
+                    <h4 class="thin">Heating, Plumbing &amp; Air Conditioning</h4>
+                    <h2 class="section_header big">
+                        Small Business, Small Prices
+                    </h2>
+                    <p>
+                        Welcome to Boiler Installation UK, your trusted source for professional heating and plumbing
+                        solutions. Our team of qualified boiler engineers is committed to delivering top-notch services
+                        tailored to the needs of homeowners and businesses alike.
+                    </p>
+                    <p>
+                        What distinguishes us in the industry is our direct approach – we work closely with our clients,
+                        eliminating intermediaries, and thereby offering competitive prices without compromising on quality.
+                        At Boiler Installation UK, we take immense pride in our work, ensuring that every installation
+                        adheres to the highest standards and complies with all safety regulations.
+                    </p>
+                    <p>
+                        Our unwavering dedication to customer satisfaction drives us to provide a friendly and dependable
+                        service that consistently surpasses your expectations. Whether you require a new boiler
+                        installation, boiler repair, radiator installation, or plumbing services, Boiler Installation UK is
+                        your dependable partner for all your heating and plumbing needs.
+                    </p>
+                    <p>Thank you for considering our services, and we eagerly anticipate the opportunity to serve you.
+                        Please don't hesitate to reach out to us soon.</p>
+                    <div class="inline-teasers-wrap">
+                        <div class="inline-block">
+                            <ul class="list2 regular grey margin_0">
+                                <li>Expert Boiler Installations</li>
+                                <li>Boiler Service & Gas Safety Certification</li>
+                                <li>Swift and Reliable Boiler Repairs</li>
+                                <li>Efficient Radiator Installations</li>
+
+                            </ul>
+                        </div>
+                        <div class="media small-teaser inline-block bottommargin_15">
+                            <div class="media-left ">
+                                <i class="fa fa-phone highlight size_small" aria-hidden="true"></i>
+                            </div>
+                            <div class="media-body fontsize_20 medium grey toppadding_5">
+                                <a href="tel:07440531320" style="color:#323232"> 07440 531320</a>
+
                             </div>
                         </div>
+                    </div>
+
+                </div>
+
+
+                <div class="col-md-6">
+                    <img loading="lazy" src="images/home-page/boiler-1.webp" alt="Boiler Replacement Worcester Bosch">
+                </div>
+                <!-- .col-* -->
+
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ls ms overflow_hidden half_section section_padding_top_50 section_padding_bottom_50 columns_padding_80">
+
+        <div class="container-fluid">
+            <div class="row">
+
+                <div class="col-md-6">
+                    <img loading="lazy" src="images/home-page/boiler-2.webp" alt="Boiler Installation">
+                </div>
+                <!-- .col-* -->
+
+                <div class="col-md-6 to_animate" data-animation="fadeInRight">
+
+                    <h2 class="section_header highlight2">
+                        Heating Services
+                    </h2>
+
+                    <div class="media big-left-media lineheight-thin">
+                        <div class="media-left media-middle">
+
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4>Precision Heating Installations and Repairs</h4>
+                            <p>
+                                At Boiler Installation UK, we specialize in precision heating system services designed to meet the needs of your home or business. Our expert team ensures that your heating system is installed or repaired with the utmost professionalism, guaranteeing efficient and enduring performance.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media big-left-media lineheight-thin">
+                        <div class="media-left media-middle">
+
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4>Boiler Service &amp; Gas Safety Certification
+
+                            </h4>
+                            <p>
+                                Our boiler service and gas safety certification package deliver thorough inspections and maintenance to ensure the seamless operation of your boiler while prioritizing the safety of your home against potential gas hazards.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media big-left-media lineheight-thin">
+                        <div class="media-left media-middle">
+
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4>24/7 emergency heating repairs</h4>
+                            <p>
+                                We understand that heating emergencies can occur at any time, especially during the coldest months. That's why our round-the-clock heating repair services are here for you. Our team is available 24/7 to swiftly diagnose and resolve issues, ranging from minor repairs to complete system replacements, ensuring your home remains comfortably warm.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .col-* -->
+
+            </div>
+        </div>
+    </section>
+
+    <section id="services"
+        class="ls ms overflow_hidden half_section section_padding_top_50 section_padding_bottom_50 columns_padding_80">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6 to_animate" data-animation="fadeInLeft">
+
+                    <h2 class="section_header highlight2">
+                        Plumbing Services
+                    </h2>
+
+                    <div class="media big-left-media lineheight-thin">
+                        <div class="media-left media-middle">
+
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4>Comprehensive Plumbing Solutions
+
+                            </h4>
+                            <p>
+                                At Boiler Installation UK, we are your trusted source for comprehensive plumbing services, addressing a wide spectrum of plumbing concerns. From pesky clogged drains and troublesome leaky faucets to substantial sewer line repairs and water heater installations, our expert plumbers are equipped to handle it all.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media big-left-media lineheight-thin">
+                        <div class="media-left media-middle">
+
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4>Precision Installations for Lasting Performance</h4>
+                            <p>
+                                Our team specializes in expert plumbing installations for various fixtures and appliances. We ensure that every installation is carried out with precision, guaranteeing not only the proper setup but also long-term functionality for your plumbing system.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="media big-left-media lineheight-thin">
+                        <div class="media-left media-middle">
+
+                        </div>
+                        <div class="media-body media-middle">
+                            <h4>24/7 emergency plumbing services.</h4>
+                            <p>
+                                Plumbing emergencies can strike at the most inconvenient times. Rest assured that Boiler Installation UK is at your service 24/7, ready to promptly and reliably address your plumbing emergencies, regardless of the hour or day. Don't hesitate to call us for immediate assistance.
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- .col-* -->
+
+                <div class="col-md-6">
+                    <img loading="lazy" src="images/home-page/radiator-1.webp" alt="Radiator replacement">
+                </div>
+                <!-- .col-* -->
+
+
+            </div>
+        </div>
+    </section>
+
+
+    @include('components/home-page-blog-area', ['recentPosts' => $recentPosts])
+
+
+    @include('components/testimonials')
+
+
+
+
+    <section id="faq" class="ls section_padding_top_150 section_padding_bottom_150">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 text-center">
+                    <h2 class="section_header">
+                        FAQ
+                    </h2>
+                    <p class="underheading">Frequently Asked Questions</p>
+                </div>
+            </div>
+            <div class="row columns_margin_top_60 to_animate" data-animation="fadeInUp">
+                <div class="col-md-4">
+                    <div class="teaser with_border rounded text-center lineheight_thin">
+                        <div class="teaser_icon main_bg_color2 round offset_icon size_small">
+                            <span class="weight-black">?</span>
+                        </div>
+                        <h4 class="poppins">
+                            What types of boilers do you install and replace?
+                        </h4>
+                        <p>
+                        Boiler Installation UK provides a wide range of installation and replacement services, including combi, system, and conventional boilers from reputable brands. We prioritize your property's unique requirements, ensuring the chosen boiler aligns with your heating needs, energy efficiency goals, and budget. Our experienced team guides you through the selection process, ensuring your immediate and long-term heating needs are met with precision and satisfaction.  
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="teaser with_border rounded text-center lineheight_thin">
+                        <div class="teaser_icon main_bg_color2 round offset_icon size_small">
+                            <span class="weight-black">?</span>
+                        </div>
+                        <h4 class="poppins">
+                            How much does a typical boiler installation cost?
+                        </h4>
+                        <p>
+                            The cost of a boiler installation can vary significantly depending on several factors. These factors include the type of boiler selected, the size and layout of your property, any additional components or services required (such as radiators or thermostat upgrades), and the complexity of the installation. To provide you with an accurate cost estimate, we offer free, no-obligation assessments. Our team will evaluate your specific needs and provide you with a transparent, competitive quote tailored to your project's requirements.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="teaser with_border rounded text-center lineheight_thin">
+                        <div class="teaser_icon main_bg_color2 round offset_icon size_small">
+                            <span class="weight-black">?</span>
+                        </div>
+                        <h4 class="poppins">
+                            Do you offer financing options for boiler installations?
+                        </h4>
+                        <p>
+                            Yes, we understand that investing in a new boiler can be a significant financial commitment. To make it more accessible, we offer financing options to spread the cost over manageable monthly payments. We'll work with you to find a financing plan that aligns with your budget and ensures you can enjoy the benefits of a new, efficient boiler without undue financial strain. Contact us for further details on our financing options.
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!-- Slide Item -->
-            <div class="slide-item">
-                <div id="image-layer-2" class="image-layer image-size image-layer-2-before" style="opacity: 0.4;">
-                </div>
-                <div class="auto-container">
-                    <div class="content-box right-aligned">
-                        <div class="content clearfix">
-                            <div class="inner">
-                                <div class="subtitle">Welcome to <br /> JB BLOCKPAVING &amp; LANDSCAPERS LTD</div>
-                                <h2>Tarmac Paving Services</h2>
-                                <div class="text">
-                                    Transform your property with precision tarmac paving services. Specializing in driveways
-                                    we offer durable, cost-effective asphalt solutions. Uncover reliable quality for your
-                                    surfacing needs.
-                                </div>
-                                <div class="link-box clearfix">
-                                    <a href="{{ route('tarmac-surfacing') }}" class="theme-btn btn-style-one"><span class="btn-title">Tarmac Surfacing <i
-                                                class="arrow flaticon-play-button-1"></i></span></a>
-                                    <a href="#contact" class="theme-btn btn-style-three"><span class="btn-title">Contact Us
-                                            <i class="arrow flaticon-play-button-1"></i></span></a>
-                                </div>
-                            </div>
+            <div class="row columns_margin_top_60 to_animate" data-animation="fadeInUp">
+                <div class="col-md-4">
+                    <div class="teaser with_border rounded text-center lineheight_thin">
+                        <div class="teaser_icon main_bg_color2 round offset_icon size_small">
+                            <span class="weight-black">?</span>
                         </div>
+                        <h4 class="poppins">
+                            What is included in your boiler service and gas safety certificate package?
+                        </h4>
+                        <p>
+                            Our comprehensive boiler service & gas safety package is designed to maintain your boiler's peak condition while prioritizing your home's safety. This inclusive package comprises a thorough inspection, meticulous cleaning, regular maintenance, and rigorous safety checks aimed at preventing potential gas hazards. Opting for our package guarantees not only efficient heating but also the utmost safety for your family and property, ensuring complete peace of mind.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="teaser with_border rounded text-center lineheight_thin">
+                        <div class="teaser_icon main_bg_color2 round offset_icon size_small">
+                            <span class="weight-black">?</span>
+                        </div>
+                        <h4 class="poppins">
+                            Are your engineers qualified and certified for boiler installations and repairs?
+                        </h4>
+                        <p>
+                            We offer 24/7 emergency boiler repair services to provide swift assistance when you need it most. Whether it's a sudden breakdown, a loss of heating during the coldest months, or any other boiler-related emergency, you can count on our team to respond promptly. Simply give us a call anytime, day or night, and we'll dispatch our experts to diagnose and resolve the issue efficiently.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="teaser with_border rounded text-center lineheight_thin">
+                        <div class="teaser_icon main_bg_color2 round offset_icon size_small">
+                            <span class="weight-black">?</span>
+                        </div>
+                        <h4 class="poppins">
+                            What should I do in case of a boiler emergency outside of regular business hours?
+                        </h4>
+                        <p>
+                            We offer 24/7 emergency boiler repair services to provide swift assistance when you need it most. Whether it's a sudden breakdown, a loss of heating during the coldest months, or any other boiler-related emergency, you can count on our team to respond promptly. Simply give us a call anytime, day or night, and we'll dispatch our experts to diagnose and resolve the issue efficiently.
+                        </p>
                     </div>
                 </div>
             </div>
-
-            <!-- Slide Item -->
-            <div class="slide-item">
-                <div id="image-layer-3" class="image-layer image-size image-layer-3-before" style="opacity: 0.4;">
-                </div>
-                <div class="auto-container">
-                    <div class="content-box">
-                        <div class="content clearfix">
-                            <div class="inner">
-                                <div class="subtitle">Welcome to <br /> JB BLOCKPAVING &amp; LANDSCAPERS LTD</div>
-                                <h2>Professional Fencing Services</h2>
-                                <div class="text">
-                                    We specialize in tailored solutions, offering expert installation and a variety of
-                                    styles to enhance security and aesthetics. Explore our range of fencing services for
-                                    residential and commercial spaces, ensuring privacy and charm. Contact us today for a
-                                    personalized quote.
-                                </div>
-                                <div class="link-box clearfix">
-                                    <a href="{{ route('fencing') }}" class="theme-btn btn-style-one"><span class="btn-title">Fencing Services <i class="arrow flaticon-play-button-1"></i></span></a>
-                                    <a href="#contact" class="theme-btn btn-style-two"><span
-                                            class="btn-title">Contact Us <i
-                                                class="arrow flaticon-play-button-1"></i></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+            <div class="row topmargin_30 to_animate" data-animation="fadeInUp">
+                <div class="col-sm-12 text-center">
+                    <a href="contact" class="theme_button color1 wide_button">Book Installation</a>
                 </div>
             </div>
         </div>
     </section>
-    <!-------------------------------------------------- End Banner Section -------------------------------------------------->
-    <!-- End Banner Section -->
-
-    @include('components.call-to-action')
-
-    <!-------------------------------------- Start About Us Section ---------------------------------------------------->
-    @include('components/home-page/about-us')
-    <!-------------------------------------- End About Us Section ---------------------------------------------------->
-
-    <!-------------------------------------- Start Projects Section ---------------------------------------------------->
-    @include('components/home-page/projects-section')
-    <!-------------------------------------- End Projects Section ---------------------------------------------------->
-
-    <!-------------------------------------- Start What We Do Section ---------------------------------------------------->
-    @include('components/home-page/what-we-do')
-    <!-------------------------------------- End What We Do Section ---------------------------------------------------->
-
-
-    <!-------------------------------------- Start Why Us Section ---------------------------------------------------->
-    @include('components/home-page/why-us')
-    <!-------------------------------------- End Why Us Section ---------------------------------------------------->
-
-
-    @include('components.call-to-action')
-
-
-    <!----------------------------------------------Work Process Section---------------------------------------------->
-    <section class="work-process" id="process">
-        <div class="round-pattern-layer"></div>
-        <div class="right-leaf"><img loading="lazy" src="images/resource/leaf-1.png"
-                alt="Stourport-on-Severn Landscaping service" title=""></div>
-        <div class="auto-container">
-            <div class="title-box">
-                <div class="row clearfix">
-                    <div class="left-col col-xl-6 col-lg-12 col-md-12">
-                        <div class="sec-title alternate">
-                            <div class="title-icon"><span class="icon"><img loading="lazy"
-                                        src="images/icons/leaf-four.png" alt="Stourport-on-Severn Landscaping service"
-                                        title=""></span></div>
-                            <div class="subtitle">How It Works</div>
-                            <h2>Working Process</h2>
-                        </div>
-                    </div>
-                    <div class="right-col col-xl-6 col-lg-12 col-md-12">
-                        <div class="text">We believe if we focus on the right processes, in the right way, any
-                            garden transformation becomes a successs.</div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="process">
-                <div class="row clearfix">
-                    <!--Process Block-->
-                    <div class="process-block col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <img loading="lazy" src="images/Turfing/house-nr-2-a.jpg" alt="Turfing in Kiddeminster">
-
-                            </div>
-                            <div class="lower-box">
-                                <div class="icon-box">
-                                    <span class="flaticon-consulting"></span>
-                                </div>
-                                <div class="step">Step One</div>
-                                <h5>Receive a Quote</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Process Block-->
-                    <div class="process-block col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <img loading="lazy" src="images/Turfing/house-nr-2-b.jpg" alt="Turfing in Kiddeminster">
-
-                            </div>
-                            <div class="lower-box">
-                                <div class="icon-box">
-                                    <span class="flaticon-wheelbarrow"></span>
-                                </div>
-                                <div class="step">Step Two</div>
-                                <h5>Clearing the area</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Process Block-->
-                    <div class="process-block col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <img loading="lazy" src="images/Turfing/house-nr-2-d.jpg" alt="Turfing in Kiddeminster">
-                            </div>
-                            <div class="lower-box">
-                                <div class="icon-box">
-                                    <span class="flaticon-gardener-2"></span>
-                                </div>
-                                <div class="step">Step Three</div>
-                                <h5>Compact Hardcore Base And Screed With Sand</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!--Process Block-->
-                    <div class="process-block col-xl-3 col-lg-3 col-md-6 col-sm-12">
-                        <div class="inner-box">
-                            <div class="image-box">
-                                <img loading="lazy" src="images/Turfing/house-nr-2-e.jpg" alt="Turfing in Kiddeminster">
-                            </div>
-                            <div class="lower-box">
-                                <div class="icon-box">
-                                    <span class="flaticon-trees"></span>
-                                </div>
-                                <div class="step">Step Four</div>
-                                <h5>Project finished</h5>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-        </div>
-    </section>
-    <!----------------------------------------------END Work Process Section---------------------------------------------->
-
-
-    <!-------------------------------------- Start Testimonials Section ---------------------------------------------------->
-    @include('components/home-page/testimonials')
-    <!-------------------------------------- End Testimonials Section ---------------------------------------------------->
-
-
-
-    <!-------------------------------------- Contact Section -------------------------------------->
-    <section class="contact-section" id="contact">
-        <div class="pattern-layer"></div>
-        <div class="auto-container">
-            <div class="row clearfix">
-                <!--Text Column-->
-                <div class="text-column col-lg-8 col-md-12 col-sm-12">
-                    <div class="inner">
-                        <div class="sec-title">
-                            <div class="title-icon"><span class="icon"><img loading="lazy"
-                                        src="images/icons/leaf-two.png" alt="Landscaping Services Halesowen"
-                                        title=""></span></div>
-                            <div class="subtitle">Get In Touch</div>
-                            <h2>Request for Free Quote</h2>
-                            <div class="sub-text">Receive complimentary project estimates from JB Blockpaving & Landscapers
-                                Ltd. Contact us to get a personalized and obligation-free assessment for your paving and
-                                landscaping needs.</div>
-                        </div>
-                        <div class="form-outer">
-                            <div class="form-box">
-                                <div class="discount">Get a Free Quote</div>
-                                <!--Newsletter-->
-                                <div class="quote-form default-form">
-
-
-
-
-
-                                    <form method="post" action="{{ route('contactForm.submit') }}">
-                                        @csrf
-                                        <div class="row clearfix">
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                <div class="field-inner">
-                                                    <input type="text" name="name" pattern="[a-zA-Z\s]+"
-                                                        minlength="4" maxlength="30" value=""
-                                                        placeholder="Your Name *" required>
-                                                    <span class="alt-icon far fa-user"></span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                <div class="field-inner">
-                                                    <input type="email" name="email"
-                                                        pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" minlength="4"
-                                                        maxlength="35" value="" placeholder="Email Address *"
-                                                        required>
-                                                    <span class="alt-icon far fa-envelope"></span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                <div class="field-inner">
-                                                    <input type="tel" pattern="[0-9]+" minlength="4" maxlength="15"
-                                                        name="phone_number" value="" placeholder="Phone *"
-                                                        required>
-                                                    <span class="alt-icon fa fa-phone-alt"></span>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                <div class="field-inner">
-                                                    <select name="service" aria-label="Select Service">
-                                                        <option>Choose Service</option>
-                                                        <option>Tree Care Services</option>
-                                                        <option>Turfing</option>
-                                                        <option>Decking and Fencing</option>
-                                                        <option>Block Paving</option>
-                                                        <option>Graveling</option>
-                                                        <option>Jet Washing</option>
-                                                        <option>Other Service</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                <div class="field-inner">
-                                                    <input type="text" name="address" maxlength="45" value=""
-                                                        placeholder="Address *" required>
-                                                    <span class="alt-icon fa fa-map-marker-alt"></span>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                <div class="field-inner">
-                                                    <div class="g-recaptcha"
-                                                        data-sitekey="6LefIscoAAAAAL_hgoA7mXVj9q-A23cuqsthlXCu"></div>
-                                                </div>
-                                            </div>
-
-                                            <div class="form-group col-lg-6 col-md-6 col-sm-12">
-                                                <div class="field-inner">
-                                                    <button type="submit"
-                                                        class="theme-btn btn-style-three alternate"><span
-                                                            class="btn-title">Get a Quote <i
-                                                                class="arrow flaticon-play-button-1"></i></span></button>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                    </form>
-
-                                    <div id="dialog" title="Thank you for contacting us.">
-                                        <p>We have received your enquiry and will respond to you as soon as
-                                            possible. For urgent enquiries please call us on one of the telephone
-                                            numbers listen on the contact section.</p>
-                                    </div>
-
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <!--Image Column-->
-                <div class="image-column col-lg-4 col-md-12 col-sm-12">
-                    <div class="inner">
-                        <div class="image-box clearfix">
-                            <figure class="image"><img loading="lazy" src="images/turfing-and-wood-wall.webp"
-                                    alt="Aritficial Lawn"></figure>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-------------------------------------- END of Contact Section -------------------------------------->
-
-    </div>
-@endsection
-
-
-@section('scripts')
 @endsection

@@ -3,7 +3,7 @@
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Services\BlockPavingPageController;
 use App\Http\Controllers\BlogPageController;
-
+use App\Http\Controllers\BoilerController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\HomePageController;
 use Illuminate\Support\Facades\Route;
@@ -12,6 +12,10 @@ use App\Http\Controllers\SitemapController;
 use App\Http\Controllers\LocalSEOController;
 use App\Http\Controllers\ContactFormController;
 use App\Http\Controllers\ProjectController;
+use App\Http\Controllers\ServicePageController;
+use App\Http\Controllers\Services\FencingPageController;
+use App\Http\Controllers\Services\TarmacSurfacingController;
+use App\Http\Controllers\Services\TurfingPageController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,30 +27,29 @@ use App\Http\Controllers\ProjectController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
+
+
+Route::get('boilers/{slug}', [BoilerController::class, 'show'])->name('boilers.show');
+    Route::get('boilers', [BoilerController::class, 'index'])->name('boilers');
+
+
+
+Route::get('/services', function () {
+    return view('services');
+})->name('services');
+
+Route::get('/boiler-installation', [ServicePageController::class, 'installation'])->name('boiler-installation');
+Route::get('/boiler-repair', [ServicePageController::class, 'repair'])->name('boiler-repair');
+Route::get('/boiler-service', [ServicePageController::class, 'service'])->name('boiler-service');
+
+
 /* --------------------------------  Contact  ------------------------------------- */
 Route::get('/contact', function () {
     return view('contact');
 })->name('contact');
 
 Route::get('/', [HomePageController::class, 'index'])->name('home');
-
-Route::get('/block-paving', [BlockPavingPageController::class, 'index'])->name('block-paving');
-
-Route::get('/turfing', function () {
-    return view('services.turfing');
-})->name('turfing');
-
-Route::get('/fencing', function () {
-    return view('services.fencing');
-})->name('fencing');
-
-Route::get('/tree-removal', function () {
-    return view('services.tree-removal');
-})->name('tree-removal');
-
-Route::get('/tarmac-surfacing', function () {
-    return view('services.tarmac-surfacing');
-})->name('tarmac-surfacing');
 
 /* --------------------------------  Services  ------------------------------------- */
 

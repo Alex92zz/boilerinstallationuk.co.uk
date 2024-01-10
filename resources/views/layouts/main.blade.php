@@ -1,174 +1,148 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html class="no-js" lang="zxx">
 
 <head>
     <meta charset="utf-8">
-    <!-- This needs to be right at the beginning -->
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
 
     @yield('meta')
 
-    <!-- Stylesheets -->
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset("images/logo/logo-icon-red.jpg") }}">
+    <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/animations.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/fonts.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/main.css") }}" class="color-switcher-link">
+    <script src="{{ asset("js/vendor/modernizr-2.6.2.min.js") }}"></script>
 
-    <link rel="preload" href="{{ asset('fonts/Flaticon.ttf') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ asset('fonts/fa-brands-400.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ asset('fonts/fa-regular-400.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ asset('fonts/fa-solid-900.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="{{ asset('/images/main-slider/block-paving-service.webp') }}" as="image" type="image/webp">
-
-
-
-    <!-- style.css has to be before responsive, if not the nav wont be displayed on mobile view!!! -->
-    <!-- owl needs to load fast because its loading the header -->
-    <link href="{{ asset('css/style-minimified.css') }}" rel="stylesheet">
-
-    <link href="{{ asset('css/owl-minimified.css') }}" rel="stylesheet">
-
-    <link href="{{ asset('css/responsive.css') }}" rel="stylesheet">
-
-    @yield('styles')
-
-    <link rel="shortcut icon" href="{{ asset('images/browser-logo.jpg') }}" type="image/x-icon">
-    <link rel="icon" href="{{ asset('images/browser-logo.jpg') }}" type="image/x-icon">
-
-    <link href="{{ asset('fonts/google-fonts-1.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link href="{{ asset('fonts/google-fonts-2.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link href="{{ asset('fonts/google-fonts-3.woff2') }}" as="font" type="font/woff2" crossorigin>
-    <link href="{{ asset('fonts-2/Flaticon.woff2') }}" as="font" type="font/woff2" crossorigin>
+    <!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+<style>
+.dark-overlay {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.35); /* Adjust the opacity as needed */
+        }
+        figure > a > img {
+     max-width: 400px;
+ }
+    </style>
 
 </head>
 
-
-
 <body>
-    <div class="page-wrapper">
 
-        @include('components/navbar')
+    <!-- search modal -->
+    <div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">
+                <i class="rt-icon2-cross2"></i>
+            </span>
+        </button>
+        <div class="widget widget_search">
+            <form method="get" class="searchform search-form form-inline" action="./">
+                <div class="form-group">
+                    <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input">
+                </div>
+                <button type="submit" class="theme_button">Search</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Unyson messages modal -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+        <div class="fw-messages-wrap ls with_padding">
+            <!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+            <!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+
+        </div>
+    </div>
+    <!-- eof .modal -->
+
+    <!-- wrappers for visual page editor and boxed version of template -->
+    <div id="canvas">
+        <div id="box_wrapper">
 
 
 
+    @include('components/navbar')
+
+
+    <main>
 
         @yield('content')
 
 
-        @include('components/footer')
+    </main>
 
-    </div>
 
-    <script defer src="{{ asset('js/minimified.js') }}"></script>
+    @include('components/footer')
 
-    <!-- bootstrap was moved here because Stylesheet blocking rendering -->
-    <!-- font-awesome top page -->
-    <!-- flaticon-2 is the pressure washer  -->
-    <script defer>
-        window.addEventListener('DOMContentLoaded', function() {
-            setTimeout(function() {
-                var stylesheets = [
-                    "{{ asset('css/flaticon-2.css') }}",
-                ];
+</div>
+<!-- eof #box_wrapper -->
+</div>
+<!-- eof #canvas -->
 
-                stylesheets.forEach(function(href) {
-                    var link = document.createElement('link');
-                    link.rel = 'stylesheet';
-                    link.href = href;
-                    document.head.appendChild(link);
-                });
-            }, 2500); // Delay of 2.5 seconds (2500 milliseconds)
-        });
+
+    <script src="{{ asset("js/compressed.js") }}"></script>
+    <script src="{{ asset("js/main.js") }}"></script>
+
+
+    <script>
+        // Function to decode obfuscated email address
+        function decodeEmail() {
+            const obfuscatedEmail = document.getElementById('obfuscated-email');
+            const decodedEmail = obfuscatedEmail.innerHTML.replace(/&#(\d+);/g, (match, dec) => String.fromCharCode(dec));
+            obfuscatedEmail.innerHTML = '<a href="mailto:' + decodedEmail + '">' + decodedEmail + '</a>';
+        }
+
+        function decodeEmail2() {
+            const obfuscatedEmail = document.getElementById('obfuscated-email2');
+            const decodedEmail = obfuscatedEmail.innerHTML.replace(/&#(\d+);/g, (match, dec) => String.fromCharCode(dec));
+            obfuscatedEmail.innerHTML = '<a href="mailto:' + decodedEmail + '">' + decodedEmail + '</a>';
+        }
+    
+        // Call the decodeEmail function to decode and replace the obfuscated email
+        decodeEmail();
+        decodeEmail2();
     </script>
 
-<script defer>
-    function obfuscateEmail(email) {
-        var obfuscatedEmail = email.replace(/[a-zA-Z]/g, function(c) {
-            return '&#' + c.charCodeAt(0) + ';';
-        });
-        return obfuscatedEmail;
-    }
-
-    // Example email address
-    var originalEmail = 'peter@pwtreecarelandscaping.co.uk';
-    var obfuscatedEmail = obfuscateEmail(originalEmail);
-
-    // Get the target element by its ID
-    var emailLink = document.getElementById('obfuscatedEmailLinkFooter');
-
-    // Set the obfuscated email address as the href and innerHTML of the <a> element
-    emailLink.innerHTML = obfuscatedEmail;
-</script>
-
-    @yield('scripts')
 
     <script defer>
-        let scriptAdded = false;
-      
-        function addScriptsForContactForm() {
-          if (!scriptAdded) {
-            // Add jQuery script
-            const jqueryScript = document.createElement('script');
-            jqueryScript.src = 'https://code.jquery.com/jquery-3.6.0.min.js';
-            jqueryScript.async = true;
-            document.head.appendChild(jqueryScript);
-
-            // Add jQuery UI script
-            const jqueryUIScript = document.createElement('script');
-            jqueryUIScript.src = 'https://code.jquery.com/ui/1.12.1/jquery-ui.min.js';
-            jqueryUIScript.async = true;
-            document.head.appendChild(jqueryUIScript);
-
-            // Add reCAPTCHA script
-            const recaptchaScript = document.createElement('script');
-            recaptchaScript.src = 'https://www.google.com/recaptcha/api.js';
-            recaptchaScript.async = true;
-            recaptchaScript.defer = true;
-            document.head.appendChild(recaptchaScript);
-
-            scriptsAdded = true;
-
-            $(function() {
-            $('form').on('submit', function(e) {
-                e.preventDefault(); // Prevent the default form submission behavior
-
-                var formData = $(this).serialize();
-
+        // code to display a dialogue box after succesful form submission
+        // this code uses Ajax and needs jQuery to function, make sure it is added after jquery and jQuery UI was imported, otherwise won't work
+        $(function() {
+            $('form').bind('submit', function() {
                 $.ajax({
                     type: 'post',
                     url: '{{ route('contactForm.submit') }}',
-                    data: formData,
+                    data: $('form').serialize(),
                     success: function() {
-                        $('form')[0].reset(); // Reset the form
-                        $("#dialog").dialog({
-                            modal: true, // Make the dialog modal
-                            buttons: {
-                                Ok: function() {
-                                    $(this).dialog("close");
-                                }
-                            }
+                        $("form").trigger('reset');
+                        $("#dialog").dialog();
+                        $('#dialog').css({
+                            'display': 'block'
                         });
-                    },
-                    error: function(xhr, status, error) {
-                        console.error('Error logging form data:', error);
                     }
                 });
+                return false;
             });
         });
-          }
-        }
+    </script>
 
-        
-      
-        window.addEventListener('scroll', () => {
-          // Add a condition here based on your scroll requirements
-          // For example, you can check if the user has scrolled a certain distance down the page
-          // For simplicity, the condition here is set to scroll down 200 pixels
-          if (window.scrollY > 100) {
-            addScriptsForContactForm();
-          }
-        });
-      </script>
-
-
-
+    @yield('scripts')
 </body>
 
 </html>

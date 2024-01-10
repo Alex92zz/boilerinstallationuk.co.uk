@@ -7,6 +7,7 @@ use App\Models\Image as ImageModel;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use App\Events\PostCreated;
+use App\Models\Boiler;
 use App\Models\Category;
 use Illuminate\Support\Facades\File;
 use App\Models\LocalSEO;
@@ -26,22 +27,15 @@ class LocalSEOController extends Controller
     {
         $post = LocalSEO::where('slug', $slug)->firstOrFail();
 
-        // Get the latest 6 projects from the same category
-        $recentProjects = Project::where('category_id', $post->category_id)
-            ->latest()
-            ->take(6)
+        $localSEOPages = LocalSEO::where('category_slug', $post->category_slug)->get();
+
+        $boilers = Boiler::take(3)
             ->get();
 
-        switch ($post->category_slug)
-            {
-                case 'block-paving':
-                    return view('localSEO.block-paving.show', compact('recentProjects', 'post'));
-                case 'turfing':
-                    return view('localSEO.turfing.show', compact('recentProjects', 'post'));
-                case 'fencing':
-                    return view('localSEO.fencing.show', compact('recentProjects', 'post'));
-                case 'tarmac-surfacing':
-                    return view('localSEO.tarmac-surfacing.show', compact('recentProjects', 'post'));
-            }
+        $recentPosts = Post::latest()
+            ->take(3)
+            ->get();
+
+        return view('localSEO.show', compact('recentPosts', 'post', 'boilers', 'localSEOPages'));
         }
     }

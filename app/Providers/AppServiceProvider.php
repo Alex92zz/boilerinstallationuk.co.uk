@@ -2,6 +2,7 @@
 
 namespace App\Providers;
 
+use App\Models\Boiler;
 use App\Models\Post;
 use App\Models\Category;
 use App\Models\LocalSEO;
@@ -42,17 +43,16 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+
         // Use view composer to share recent blog posts with the navbar
-        View::composer(['components.navbar', 'components.footer', 'components.blog-page-sidebar', 'components.home-page-blog-area-2'], function ($view) {
+        View::composer(['components.navbar', 'components.footer', 'components.blog-side-bar'], function ($view) {
             $recentBlogPosts = Post::latest()->take(5)->get();
-            $recentProjects = Project::latest()->take(5)->get();
             $allCategories = Category::all();
-            $localSEOs = LocalSEO::latest()->take(3)->get();
+            $boilers = Boiler::all();
             $view->with([
                 'recentBlogPosts' => $recentBlogPosts,
-                'recentProjects' => $recentProjects,
                 'categories' => $allCategories,
-                'localSEOs' => $localSEOs
+                'boilers' => $boilers
             ]);
         });
 

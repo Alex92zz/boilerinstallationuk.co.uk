@@ -57,23 +57,13 @@ class LocalSeoResource extends Resource
                     ->label('Meta Description'),
                     TextInput::make('slug')
                         ->required(),
-                    
                     TextInput::make('location')->required(),
-                    
-                    Hidden::make('header_text')
-                        ->default('John'),
-                    TextInput::make('about_us_green_subtitle')
-                    ->label('Text above the first image, aprox 18 words')
-                    ->required(),
                     RichEditor::make('about_us_paragraph')
-                    ->label('Main Paragraph, 6 subtitles, aprox 360 words')
+                    ->label('Main Paragraph, 6 subtitles, aprox 1000 words')
                     ->required()
                     ->disableToolbarButtons([
-                        'attachFiles',
                         'codeBlock',
-                    ]),
-
-                    
+                    ]),                    
                 ])
             ]);
     }
