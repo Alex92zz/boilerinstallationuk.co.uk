@@ -13,14 +13,14 @@
                                         @foreach ($boilers as $boiler)
                                         <li class="media">
                                             <div class="media-left media-middle">
-                                                <a href="boiler-Glow-Worm">
+                                                <a href="{{ route('boilers.show', ['slug' => $boiler->slug]) }}">
                                                     <img loading="lazy" src="{{ asset($boiler->image_1) }}" class="with_background" alt="{{ $boiler->name}}">
                                                 </a>
                                             </div>
 
                                             <div class="media-body media-middle">
                                                 <h4>
-                                                    <a href="boiler-Glow-Worm">{{ $boiler->name}}</a>
+                                                    <a href="{{ route('boilers.show', ['slug' => $boiler->slug]) }}">{{ $boiler->name}}</a>
                                                 </h4>
                                                 <span class="quantity bold">
                                                     <span class="amount highlight">£{{ $boiler->price }}</span>

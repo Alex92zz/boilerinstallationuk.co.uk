@@ -76,8 +76,7 @@
                                 <p>{!! $post->content !!}</p>
 
                                 <div class="text-center">
-                                    <a href="{{ route('contact') }}" class="theme_button wide_button color1 text-center">Book
-                                        Installation</a>
+                                    <a href="tel:07440531320" class="theme_button wide_button color1 text-center">SPEAK TO A BOILER EXPERT</a>
 
                                 </div>
 

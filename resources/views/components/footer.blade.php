@@ -101,7 +101,7 @@
                     </div>
                     <div class="media small-teaser">
                         <div class="media-left media-middle">
-                            <a href="#" class="social-icon color-icon border-icon rounded-icon soc-google"></a>
+                            <a href="https://g.co/kgs/wNncmyR" class="social-icon color-icon border-icon rounded-icon soc-google"></a>
                         </div>
                         <div class="media-body media-middle">
                             Google

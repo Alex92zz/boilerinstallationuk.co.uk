@@ -161,15 +161,15 @@
                                     alt="Gas Safe Register Logo" width="50px" height="50px">
                             </li>
                             <li>
-                                <img src="{{ asset('images/navbar/Worcester-logo.webp') }}"
+                                <img src="{{ asset('images/navbar/Worcester-logo.jpg') }}"
                                     alt="Worcester Logo" width="100px" height="100px">
                             </li>
                             <li>
-                                <img  src="{{ asset('images/navbar/vaillant.webp') }}" alt="Villant Logo"
+                                <img  src="{{ asset('images/navbar/vaillant.jpg') }}" alt="Villant Logo"
                                     width="100px" height="100px">
                             </li>
                             <li>
-                                <img  src="{{ asset('images/navbar/baxi.webp') }}" alt="Baxi Logo"
+                                <img  src="{{ asset('images/navbar/baxi.jpg') }}" alt="Baxi Logo"
                                     width="100px" height="100px">
                             </li>
 

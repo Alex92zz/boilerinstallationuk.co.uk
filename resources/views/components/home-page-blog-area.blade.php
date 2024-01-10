@@ -14,7 +14,17 @@
             <div class="col-md-4 col-sm-6 col-sm-offset-3 col-md-offset-0">
                 <article class="vertical-item content-padding with_border text-center rounded overflow-hidden">
                     <div class="item-media">
-                        <img loading="lazy" src="{{ asset($recentPost->thumbnail) }}" alt="{{ $recentPost->title }}">
+                        @if (!empty($recentPost->thumbnail))
+                        @php
+                            $imageUrl = asset($recentPost->thumbnail);
+                        @endphp
+                        <img loading="lazy" src="{{ asset($imageUrl) }}" alt="{{ $recentPost->title }}">
+                    @else
+                        <img loading="lazy"
+                            src="{{ asset('images/blog-images/boiler-6.jpg') }}"
+                            alt="{{ $recentPost->title }}">
+                    @endif
+                        
                         <div class="media-links">
                             <a href="{{ route('posts.show', ['slug' => $recentPost->slug]) }}" class="abs-link"></a>
                         </div>

@@ -114,7 +114,7 @@
                                         </a>
                                     </div>
                                     <div class="apsc-each-profile">
-                                        <a class="apsc-google-plus-icon clearfix" href="#">
+                                        <a class="apsc-google-plus-icon clearfix" href="https://g.co/kgs/wNncmyR">
                                             <div class="apsc-inner-block">
                                                 <span class="social-icon">
                                                     <i class="apsc-googlePlus fa fa-google-plus"></i>

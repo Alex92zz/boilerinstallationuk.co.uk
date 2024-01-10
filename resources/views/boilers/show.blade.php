@@ -192,7 +192,11 @@
                                 </tr>
                             </table>
                         </div>
-                        <a href="{{ route('contact')}}"><button>Get in Touch</button></a>
+
+                        <p class="buttons topmargin_40">
+                            <a href="tel:07440531320" class="theme_button color1 margin_0">SPEAK TO A BOILER EXPERT</a>
+                            <!-- <a href="shop-checkout-right.html" class="theme_button">Checkout</a> -->
+                        </p>
                     </div>
                     <!-- eof .tab-content -->
                 </div>

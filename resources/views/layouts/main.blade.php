@@ -9,18 +9,25 @@
 
     @yield('meta')
 
-    <link rel="shortcut icon" type="image/x-icon" href="{{ asset("images/logo/logo-icon-red.jpg") }}">
-    <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/animations.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/fonts.css") }}">
-    <link rel="stylesheet" href="{{ asset("css/main.css") }}" class="color-switcher-link">
-    <script src="{{ asset("js/vendor/modernizr-2.6.2.min.js") }}"></script>
 
-    <!--[if lt IE 9]>
-		<script src="js/vendor/html5shiv.min.js"></script>
-		<script src="js/vendor/respond.min.js"></script>
-		<script src="js/vendor/jquery-1.12.4.min.js"></script>
-	<![endif]-->
+    <link rel="preload" as="font" type="font/woff2" href="../fonts/Roboto-normal-300.woff2" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="../fonts/Roboto-normal-400.woff2" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="../fonts/Roboto-normal-500.woff2" crossorigin="anonymous">
+<link rel="preload" as="font" type="font/woff2" href="../fonts/Roboto-normal-900.woff2" crossorigin="anonymous">
+
+<!-- Preload FontAwesome font (woff2 and svg formats) -->
+<link rel="preload" as="font" type="font/woff2" href="../fonts/fontawesome-webfont.woff2?v=4.6.3" crossorigin="anonymous">
+
+<!-- Preload Socicon font (woff and svg formats) -->
+<link rel="preload" as="font" type="font/woff" href="../fonts/socicon.woff" crossorigin="anonymous">
+
+    <link rel="shortcut icon" type="image/x-icon" href="{{ asset("images/logo/logo-icon-red.jpg") }}">
+
+    <link rel="stylesheet" href="{{ asset("css/bootstrap.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/fonts.css") }}">
+    <link rel="stylesheet" href="{{ asset("css/main.css") }}">
+
+    <link rel="stylesheet" href="{{ asset("css/non-critical-main.css") }}" defer>
 <style>
 .dark-overlay {
             content: "";

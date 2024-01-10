@@ -50,8 +50,19 @@
                                     <div class="col-md-5">
                                         <a href="{{ route('posts.show', ['slug' => $post->slug]) }}">
                                             <div class="item-media entry-thumbnail">
-                                                <img loading="lazy" src="{{ asset($post->thumbnail) }}""
+
+
+
+                                                @if (!empty($post->thumbnail))
+                                                @php
+                                                    $imageUrl = asset($post->thumbnail);
+                                                @endphp
+                                                <img loading="lazy" src="{{ asset($imageUrl) }}" alt="{{ $post->title }}">
+                                            @else
+                                                <img loading="lazy"
+                                                    src="{{ asset('images/blog-images/boiler-6.jpg') }}"
                                                     alt="{{ $post->title }}">
+                                            @endif
                                             </div>
                                         </a>
                                     </div>
@@ -69,7 +80,7 @@
                                             </p>
 
                                             <h4 class="entry-title">
-                                                <a href="The-Top-Benefits-of-Upgrading-to-a-New-Boiler-for-Your-Home"
+                                                <a href="{{ route('posts.show', ['slug' => $post->slug]) }}"
                                                     rel="bookmark">{{ $post->title }}</a>
                                             </h4> 
                                             <span>Posted: {{ $post->updated_at->diffForHumans() . '  '}}   By: Alex Tamas</span>

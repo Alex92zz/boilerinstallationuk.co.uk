@@ -40,11 +40,12 @@ class BoilerResource extends Resource
                         ->afterStateUpdated(fn (Set $set, ?string $state) => $set('slug', Str::slug($state)))
                         ->required()
                         ->label('Boiler Name'),
+                
+                Textarea::make('meta_description')->label('Meta Description')->required(),
+                Textarea::make('meta_keywords')->label('Meta Keywords')->required(),
                 TextInput::make('slug')
                 ->label('Slug')
                         ->required(),
-                Textarea::make('meta_description')->label('Meta Description')->required(),
-                Textarea::make('meta_keywords')->label('Meta Keywords')->required(),
                 TextInput::make('price')
                 ->required()
                 ->numeric()

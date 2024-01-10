@@ -38,7 +38,7 @@
         <div class="container">
             <div class="row">
                @foreach ($boilers as $boiler)
-               <div class=" teaser-div col-md-4 col-sm-6 to_animate" data-animation="pullUp">
+               <div class=" teaser-div col-md-4 col-sm-6 to_animate" data-animation="pullUp" style="padding-bottom:100px;">
                 <div class="teaser text-center">
                     <img loading="lazy" src="{{ asset($boiler->image_1) }}" alt="{{ $boiler->name }}">
                     <h4 class="poppins hover-color2 highlight" style="min-height: 40px;">

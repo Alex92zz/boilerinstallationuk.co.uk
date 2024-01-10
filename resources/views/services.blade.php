@@ -65,7 +65,7 @@
                                 Experience excellence in boiler installation. Our skilled team ensures efficient, safe, and reliable boiler installations for your peace of mind.
                             </p>
                             <p class="colorlinks small-text">
-                                <a href="{{ route('contact') }}">Get In Quote</a>
+                                <a href="{{ route('boiler-installation') }}">Boiler Installation</a>
                             </p>
                         </div>
                     </article>
@@ -88,7 +88,7 @@
                                 Trust us for top-notch boiler service. We maintain, repair, and optimize boilers for peak performance and lasting reliability.
                             </p>
                             <p class="colorlinks small-text">
-                                <a href="{{ route('contact') }}">Get In Quote</a>
+                                <a href="{{ route('boiler-service') }}">Boiler Service</a>
                             </p>
                         </div>
                     </article>
@@ -109,7 +109,7 @@
                                 Depend on us for swift, expert boiler repairs. Our dedicated team restores your boiler's functionality promptly and efficiently.
                             </p>
                             <p class="colorlinks small-text">
-                                <a href="{{ route('contact') }}">Get In Quote</a>
+                                <a href="{{ route('boiler-repair') }}">Boiler Repair</a>
                             </p>
                         </div>
                     </article>
@@ -145,7 +145,7 @@
                                 Discover quality in new radiator installation. Our experts provide efficient and precise installations for improved heating and energy efficiency.
                             </p>
                             <p class="highlightlinks small-text">
-                                <a href="{{ route('contact') }}">Get In Quote</a>
+                                <a href="tel:07440531320">Get In Touch</a>
                             </p>
                         </div>
                     </article>
@@ -166,7 +166,7 @@
                                 Elevate your plumbing with our installation and repair services. Our skilled team ensures reliability, efficiency, and lasting performance.
                             </p>
                             <p class="highlightlinks small-text">
-                                <a href="{{ route('contact') }}">Get In Quote</a>
+                                <a href="tel:07440531320">Get In Touch</a>
                             </p>
                         </div>
                     </article>
@@ -187,7 +187,7 @@
                                 Swift and dependable pipe leak repair. We fix leaks efficiently, preventing damage and ensuring a reliable plumbing system.
                             </p>
                             <p class="highlightlinks small-text">
-                                <a href="{{ route('contact') }}">Get In Quote</a>
+                                <a href="tel:07440531320">Get In Touch</a>
                             </p>
                         </div>
                     </article>
